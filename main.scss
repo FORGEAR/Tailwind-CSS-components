@@ -1,0 +1,142 @@
+/*main.scss*/
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    /* reduce base fontsize for mobile*/
+    @media(max-width: 767px){
+        font-size: 14px;
+    }
+}
+
+$theme-colors: (
+   "primary" : #626ED4,
+   "secondary" : #343549,
+   "success": #2AA39A,
+   "danger": #EC4561,
+   "warning": #F8B425,
+   "info": #38A5F8,
+   "light": #f8f8fa,
+   "dark": #575c62,
+   "muted": #EDECF1
+);
+
+// colors is a map which contains key:value pairs
+@each $colorName, $colorValue in $colors {
+    // this will generate classes like bgGray2, bgBlue4, etc
+    .bg#{$colorName}{
+        background-color: $colorValue;
+    }
+
+    // generate border color classes like borderOrange3, borderPurple1, etc
+    .border#{$colorName}{
+        border-color: $colorValue;
+    }
+
+    // generate text color classes like textBlack, textGreen5, etc
+    .text#{$colorName}{
+        color: $colorValue;
+    }
+}
+
+// _spacing.scss
+ $spacers : (
+      0,1,2,3,4,
+      5,6,7,8,
+      9,10,11,12,
+      13,14,15,16,
+      17,18,19,20,
+      21,22,23,24
+ );
+ $sides: (
+      'Top','Right','Bottom','Left'
+ );
+ // generate margin and padding classes
+    @each $space in $spacers{
+         // for each side
+         @each $side in $sides {
+            // creates classes like mRight6, mLeft1, etc
+            .m#{$side}#{$space} {
+                margin-#{$side}: #{$space/4}rem;
+            }
+            // creates classes like pTop4, pBottom3, etc
+            .p#{$side}#{$space} {
+                padding-#{$side}: #{$space/4}rem;
+            }
+        }
+    }
+
+// main.scss
+    .displayGrid{
+        display:grid;
+    }
+    // grid column list
+    $gridColumns : (
+        1,2,3,4,5,6,7,8,9,10,11,12
+    );
+    // grid-template-columns to divide grid into number of columns
+    @each $cols in $gridColumns {
+        .gridCols#{$cols} {
+            grid-template-columns: repeat($cols, minmax(0, 1fr));
+        }
+
+        // span a div across multiple columns
+        .gridColSpan#{$cols} {
+            grid-column-start: span $cols;
+        }
+    }
+
+// main.scss
+    .displayFlex{
+        display: flex;
+    }
+    .flexWrap{
+       flex-wrap: wrap;
+    }
+    .flexCol{
+        flex-direction: column;
+    }
+    .flexGrow{
+        flex-grow: 1;
+    }
+
+    // use to align content inside flex container
+    .justifyBetween{
+        justify-content: space-between;
+    }
+    .justifyCenter{
+        justify-content: center;
+    }
+    .itemsCenter{
+        align-items: center;
+    }
+
+// main.scss - where you have specified grid utilities
+
+$gridColumns : (
+    1,2,3,4,5,6,7,8,9,10,11,12
+);
+@each $cols in $gridColumns {
+    .gridCols#{$cols} {
+        grid-template-columns: repeat($cols, minmax(0, 1fr));
+    }
+
+    // responsive variants below
+    // creates classes like md:gridCols3, md:gridCols5, etc
+    .md\:gridCols#{$cols} {
+        @media(min-width: 768px){
+            grid-template-columns: repeat($cols, minmax(0, 1fr)) !important;
+        }
+    }
+
+    // creates classes like lg:gridCols2, lg:gridCols3, etc
+    .lg\:gridCols#{$cols} {
+        @media(min-width: 1024px){
+            grid-template-columns: repeat($cols, minmax(0, 1fr)) !important;
+        }
+    }
+}
+     
