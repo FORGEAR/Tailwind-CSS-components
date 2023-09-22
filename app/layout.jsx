@@ -16,7 +16,7 @@ const Rootlayout = ({children}) => {
         <link rel="icon" type="image/svg" href="/assets/images/logo.svg" />
       </head>
       <body className="no-scrollbar overflow-y-auto">
-          <Provider>
+          {/* <Provider> */}
             <div className="main">
                 <div className="gradient" />
             </div>
@@ -26,7 +26,7 @@ const Rootlayout = ({children}) => {
               {children}
               <Footer />
             </main>
-          </Provider>
+          {/* </Provider> */}
       </body>
     </html>
   )
