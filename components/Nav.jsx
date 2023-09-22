@@ -22,7 +22,7 @@ return (
     <nav className="flex-between w-full mt-3 mb-16">
     <Link href="/" className="flex gap-2 flex-center">
         <Image
-        src="/assets/images/logo.svg"
+        src="/next.svg"
         alt="Logo"
         width={30}
         height={30}
@@ -31,7 +31,7 @@ return (
         <p className="logo_text">Prompt Community</p>
     </Link>
     {/* Desktop Navigation */}
-    <div className="sm:flex hidden">
+    {/* <div className="sm:flex hidden">
         {session?.user ? (
         <div className="flex gap-3 md:gap-5">
             <Link href="/create-prompt" className="black_btn">
@@ -49,9 +49,9 @@ return (
             </Link>
         </div>
         ) : null}
-    </div>
+    </div> */}
     {/* Mobile Navigation */}
-    <div className="sm:hidden flex relative">
+    {/* <div className="sm:hidden flex relative">
         {session?.user ? (
         <div className="flex">
             <Image
@@ -75,7 +75,7 @@ return (
             )}
         </div>
         ) : null}
-    </div>
+    </div> */}
     </nav>
 );
 };
