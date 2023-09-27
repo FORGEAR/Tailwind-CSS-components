@@ -4,7 +4,7 @@ const currentYear = new Date().getFullYear();
 const Footer = () => {
   return (
 
-    <footer class="flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between">
+    <footer class="flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 border-t border-blue-gray-50 px-6 py-6 text-center md:justify-between">
         <p class="block font-sans text-base font-normal leading-relaxed text-blue-gray-900 antialiased">
             © {currentYear} Manul Thanura
         </p>
