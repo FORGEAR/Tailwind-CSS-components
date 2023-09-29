@@ -1,4 +1,5 @@
 import React from 'react'
+import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 
 const features = [
   {
