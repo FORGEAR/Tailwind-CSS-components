@@ -20,8 +20,7 @@ const Home = () => {
       </a>
   </div>
   <Feed />
-  </section>
-  
+   </section>
   )
 }
 
