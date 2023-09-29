@@ -1,12 +1,11 @@
 import React from 'react'
-import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 
 const features = [
   {
     name: 'Push to deploy',
     description:
       'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-    icon: CloudArrowUpIcon,
+    icon: <i class="fi fi-rr-home"></i>,
   },
   {
     name: 'SSL certificates',
