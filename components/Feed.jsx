@@ -5,7 +5,6 @@ const features = [
     name: 'Push to deploy',
     description:
       'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
-    icon: <i class="fi fi-rr-home"></i>,
   },
   {
     name: 'SSL certificates',
