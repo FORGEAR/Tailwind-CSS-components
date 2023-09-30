@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <section className="w-full flex-center flex-col">
     <div class="flex flex-1 w-full flex-col items-center justify-center text-center px-4 sm:mt-28 mt-18">
-    {/* <div class="items-center justify-center text-center"> */}
       <h1
           class="border rounded-2xl py-1 px-4 text-slate-500 text-sm mb-5 hover:scale-105 transition duration-300 ease-in-out">Welcome to the components Community!</h1>
       <h1 class="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">Tailwind CSS<br className="max-md:hidden"/>
