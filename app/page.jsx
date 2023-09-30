@@ -13,7 +13,6 @@ const Home = () => {
               <span class="relative mx-2">Components</span>
           </span> 
       </h1>
-      {/* <p class="mx-auto mt-12 max-w-xl text-lg text-slate-700 leading-7">If you're interested in learning more about AI prompt ideas, or if you're just looking for a place to share your own ideas, then the AI Prompt Ideas Community is the perfect place for you.</p> */}
       <p class="justify-center mt-12 px-8"> Build beautiful, responsive websites with Tailwind CSS components.<br/>Our library of pre-built components makes it easy to get started with Tailwind CSS, and you can customize them to match your unique style.</p>
       <a class="bg-black rounded-xl text-white font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-black/80" href="/create-prompt">Browse components →
       </a>
