@@ -1,64 +1,6 @@
 "use client";
 
-// import React from 'react'
-import Link from 'next/link' ;
-import Image from 'next/image' ;
-
-
-const BurgerMenu = () => {
-	const [isOpen, setIsOpen] = useState(false);
-  
-	useEffect(() => {
-	  const burger = document.querySelectorAll('.navbar-burger');
-	  const menu = document.querySelectorAll('.navbar-menu');
-  
-	  if (burger.length && menu.length) {
-		for (var i = 0; i < burger.length; i++) {
-		  burger[i].addEventListener('click', function() {
-			for (var j = 0; j < menu.length; j++) {
-			  menu[j].classList.toggle('hidden');
-			}
-		  });
-		}
-	  }
-  
-	  // close
-	  const close = document.querySelectorAll('.navbar-close');
-	  const backdrop = document.querySelectorAll('.navbar-backdrop');
-  
-	  if (close.length) {
-		for (var i = 0; i < close.length; i++) {
-		  close[i].addEventListener('click', function() {
-			for (var j = 0; j < menu.length; j++) {
-			  menu[j].classList.toggle('hidden');
-			}
-		  });
-		}
-	  }
-  
-	  if (backdrop.length) {
-		for (var i = 0; i < backdrop.length; i++) {
-		  backdrop[i].addEventListener('click', function() {
-			for (var j = 0; j < menu.length; j++) {
-			  menu[j].classList.toggle('hidden');
-			}
-		  });
-		}
-	  }
-  
-	  return () => {
-		// remove event listeners on unmount
-		burger.forEach(el => el.removeEventListener('click'));
-		close.forEach(el => el.removeEventListener('click'));
-		backdrop.forEach(el => el.removeEventListener('click'));
-	  };
-	}, []);
-  
-	const handleBurgerClick = () => {
-	  setIsOpen(!isOpen);
-	};
-};
-  
+import React from 'react'
 
 const Nav = () => {
   return (
