@@ -17,10 +17,6 @@ const Rootlayout = ({children}) => {
       </head>
       <body className="no-scrollbar overflow-y-auto">
           {/* <Provider> */}
-            <div>
-                {/* <div className="gradient" /> */}
-            </div>
-
             {/* <main className="app"> */}
             <main>
               <Nav />
