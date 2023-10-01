@@ -2,6 +2,8 @@
 
 This project is a collection of reusable Tailwind CSS components. The components are designed to be beautiful, responsive, and easy to use.
 
+![image](./public/demo.png)
+
 ## Contributing
 
 If you would like to contribute to this project, please feel free to submit a pull request!
