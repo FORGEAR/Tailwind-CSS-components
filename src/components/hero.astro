@@ -1,6 +1,6 @@
 ---
 import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/sketch.png";
+import heroImage from "assets/hero.svg";
 import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 ---
@@ -11,7 +11,7 @@ import { Icon } from "astro-icon";
     <Picture
       src={heroImage}
       alt="Astronaut in the air"
-      widths={[500, 500, 500]}
+      widths={[1000, 500, 500]}
       aspectRatio="1:1"
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
