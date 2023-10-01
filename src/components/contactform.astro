@@ -114,7 +114,8 @@ import Button from "./ui/button.astro";
       })
       .catch((error) => {
         console.log(error);
-        result.innerHTML = "Something went wrong!";
+        result.innerHTML = "Something went wrong!"; 
+
       })
       .then(function () {
         form.reset();
@@ -124,4 +125,5 @@ import Button from "./ui/button.astro";
         }, 5000);
       });
   });
+  
 </script>
