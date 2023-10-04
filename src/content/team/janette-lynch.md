@@ -1,6 +1,6 @@
 ---
 draft: false
-name: "Accordions"
+name: "Awesome"
 title: "Senior Director"
 avatar: {
     src: "https://images.unsplash.com/photo-1580489944761-15a19d654956?&fit=crop&w=280",
