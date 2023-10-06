@@ -31,7 +31,7 @@ const teamCollection = defineCollection({
   }),
 });
 
-const teamCollection = defineCollection({
+const compCollection = defineCollection({
   schema: z.object({
     draft: z.boolean(),
     name: z.string(),
