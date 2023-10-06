@@ -38,5 +38,4 @@ const teamCollection = defineCollection({
 export const collections = {
   'blog': blogCollection,
   'team': teamCollection,
-  'comp': compCollection,
 };
