@@ -36,6 +36,7 @@ const compCollection = defineCollection({
     draft: z.boolean(),
     name: z.string(),
     title: z.string(),
+    
     avatar: z.object({
       src: z.string(),
       alt: z.string(),
