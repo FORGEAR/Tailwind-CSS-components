@@ -2,6 +2,9 @@
 
 This project is a collection of reusable Tailwind CSS components. The components are designed to be beautiful, responsive, and easy to use.
 
+![Static Badge](https://img.shields.io/badge/Repo-Tailwind_CSS_Components-00c2e0)
+
+
 ![image](./public/demo.png)
 
 ## Contributing
