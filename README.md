@@ -6,6 +6,7 @@ This project is a collection of reusable Tailwind CSS components. The components
 ![GitHub contributors](https://img.shields.io/github/contributors/FORGEAR/Tailwind-CSS-components?color=red)
 ![GitHub Repo stars](https://img.shields.io/github/stars/FORGEAR/Tailwind-CSS-components?color=yellow)
 ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/FORGEAR/Tailwind-CSS-components)
+![GitHub forks](https://img.shields.io/github/forks/FORGEAR/Tailwind-CSS-components)
 
 
 
