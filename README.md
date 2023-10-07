@@ -4,6 +4,7 @@ This project is a collection of reusable Tailwind CSS components. The components
 
 ![Static Badge](https://img.shields.io/badge/Repo-Tailwind_CSS_Components-00c2e0)
 ![GitHub contributors](https://img.shields.io/github/contributors/FORGEAR/Tailwind-CSS-components)
+![GitHub Repo stars](https://img.shields.io/github/stars/FORGEAR/Tailwind-CSS-components?color=yellow)
 
 
 ![image](./public/demo.png)
