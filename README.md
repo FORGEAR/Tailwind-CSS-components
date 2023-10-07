@@ -9,7 +9,6 @@ This project is a collection of reusable Tailwind CSS components. The components
 ![GitHub forks](https://img.shields.io/github/forks/FORGEAR/Tailwind-CSS-components)
 
 
-
 ![image](./public/demo.png)
 
 ## Contributing
